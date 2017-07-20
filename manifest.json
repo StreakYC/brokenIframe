@@ -1,0 +1,26 @@
+{
+  "name": "__MSG_appName__",
+  "description": "__MSG_appDesc__",
+  "version": "3.2",
+  "homepage_url": "http://www.streak.com",
+  "content_scripts": [
+    {
+      "matches": [
+        "*://mail.google.com/*",
+        "*://localhost/*"
+      ],
+      "js": ["index.js"],
+      "css": ["index.css"],
+      "run_at": "document_end"
+    }
+  ],
+  "manifest_version": 2,
+  "default_locale": "en",
+  "minimum_chrome_version": "42.0",
+
+  "content_security_policy": "script-src 'self' http://localhost http://localhost:8000 https://*.google.com; object-src 'self';",
+
+  "web_accessible_resources": [
+    "bridgeIFrame.html", "bridgeIFrame.js", "driveIFrame.html", "driveIFrame.js"
+  ]
+}

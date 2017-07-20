@@ -1,0 +1,10 @@
+{
+  "appName": {
+    "message": "Test",
+    "description": "Broken iframe test."
+  },
+  "appDesc": {
+    "message": "Broken iframe test.",
+    "description":"Broken iframe test."
+  }
+}
