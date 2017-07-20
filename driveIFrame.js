@@ -24,7 +24,7 @@ function createPicker(){
   var builder = new google.picker.PickerBuilder()
                 .setCallback(pickerCallback)
                 .setOAuthToken(oauthToken)
-                .setOrigin('http://localhost:8000');
+                .setOrigin('https://streakyc.github.io');
 
   var imagesView = new google.picker.DocsView()
               .setSelectFolderEnabled(true)

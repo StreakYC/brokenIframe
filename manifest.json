@@ -6,8 +6,7 @@
   "content_scripts": [
     {
       "matches": [
-        "*://mail.google.com/*",
-        "*://localhost/*"
+        "https://streakyc.github.io/brokenIframe/"
       ],
       "js": ["index.js"],
       "css": ["index.css"],
@@ -18,7 +17,7 @@
   "default_locale": "en",
   "minimum_chrome_version": "42.0",
 
-  "content_security_policy": "script-src 'self' http://localhost http://localhost:8000 https://*.google.com; object-src 'self';",
+  "content_security_policy": "script-src 'self' 'unsafe-line' https://streakyc.github.io/brokenIframe/ https://*.google.com; object-src 'self';",
 
   "web_accessible_resources": [
     "bridgeIFrame.html", "bridgeIFrame.js", "driveIFrame.html", "driveIFrame.js"
